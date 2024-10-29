@@ -1,47 +1,51 @@
 # Calculator App
 
-## Overview
+A simple and interactive Android application that allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division. The app features a clean user interface built with Material Design components.
 
-This is a simple calculator application built for Android using Java. The app supports basic arithmetic operations like addition, subtraction, multiplication, and division, as well as the use of brackets for more complex calculations.
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
-
-- Basic operations: Addition, subtraction, multiplication, and division.
-- Support for parentheses for order of operations.
-- Clear (C) and All Clear (AC) buttons for input management.
-- Responsive UI built with Android's Material Design components.
+- Perform basic arithmetic operations: addition, subtraction, multiplication, and division.
+- Clear (C) and All Clear (AC) buttons to manage inputs effectively.
+- Support for parentheses to manage order of operations.
+- Responsive user interface with a modern design.
 
 ## Technologies Used
-
 - Java
 - Android SDK
+- XML (for layout design)
 - Material Design Components
-- Mozilla Rhino JavaScript Engine for evaluating mathematical expressions
 
-## Code Structure
-MainActivity.java: The main logic of the application, handling button clicks and performing calculations.
-activity_main.xml: The layout file that defines the UI components of the calculator.
-XML Layout
-The layout consists of:
 
-## Two TextView components:
-solution_tv: Displays the current expression.
-result_tv: Displays the result of the evaluated expression.
-A LinearLayout that contains the buttons for numbers and operations.
+## Usage
+Adding Numbers and Operations: Tap on the buttons to input numbers and operations.
+Using Clear (C) and All Clear (AC):
+C: Deletes the last character.
+AC: Clears the entire input.
+Evaluating Expressions: Tap the = button to calculate the result of the expression displayed.
+
+## How It Works
+The application maintains a string representing the current expression. When a button is pressed, the input is appended to this string. Upon pressing the = button, the expression is evaluated using the Mozilla Rhino JavaScript engine, allowing for complex calculations, including those with parentheses.
+
+The UI is built using XML, and the layout is designed to be user-friendly, ensuring that buttons are easily accessible and clearly labeled.
+
 Important Code Snippets
 Button Click Handling:
 
-## java
-Copy code
+java
 public void onClick(View view) {
     MaterialButton button = (MaterialButton) view;
     String buttonText = button.getText().toString();
     // Logic for handling button clicks
 }
-## Expression Evaluation:
 
-java
-Copy code
+Expression Evaluation:
 String getResult(String data) {
     try {
         Context context = Context.enter();
@@ -53,27 +57,19 @@ String getResult(String data) {
         return "Err";
     }
 }
-## Getting Started
 
-### Prerequisites
 
-- Android Studio
-- Android SDK
-- A physical device or emulator to run the application
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
 
-### Installation
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   Contributing
-## Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-css
+vbnet
 Copy code
 
-Feel free to modify any sections to better fit your project details or style!
+### Instructions:
+- Replace `https://github.com/yourusername/calculator.git` with the actual URL of your GitHub repository.
+- Adjust any sections as needed to reflect your project accurately.
 
+Feel free to modify any part of the README to better suit your project's details and requirements!
