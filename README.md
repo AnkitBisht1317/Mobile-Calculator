@@ -62,14 +62,7 @@ String getResult(String data) {
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-vbnet
-Copy code
-
-### Instructions:
-- Replace `https://github.com/yourusername/calculator.git` with the actual URL of your GitHub repository.
-- Adjust any sections as needed to reflect your project accurately.
 
 Feel free to modify any part of the README to better suit your project's details and requirements!
